@@ -6,10 +6,11 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
 
 
 @RequiredArgsConstructor      // 초기화 필요한 arg만 constructor
-@Controller
+@RestController
 public class UserController {
 
     private final UserService userService;
